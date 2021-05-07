@@ -395,6 +395,16 @@ a:hover {
     text-decoration: none;
 }
 
+a>p:hover {
+    color: #FC2B2B;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #FC2B2B;
+    text-decoration: none;
+}
+
 
 /* footer end */
 
