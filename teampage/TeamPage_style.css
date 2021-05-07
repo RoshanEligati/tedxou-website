@@ -502,11 +502,13 @@ h4 {
 
 hr {
     height: 1px;
-    width: 96%;
-    margin-right: 2%;
-    margin-left: 2%;
+    width: 90%;
+    margin-right: 5%;
+    margin-left: 5%;
     background-color: #fc2b2b;
     border-top: 1px #fc2b2b;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
 }
 
 
