@@ -111,8 +111,7 @@ a {
     padding-bottom: 3px;
 }
 
-.three a
-{
+.three a {
     text-decoration: none;
     color: aliceblue;
 }
@@ -206,6 +205,10 @@ a {
     margin: 0px 10px;
 }
 
+.navbar .navbar-brand {
+    margin-top: -0.45rem;
+}
+
 @media screen and (min-width: 1024px) and (max-width: 1024px) {
     .nav li a {
         margin: 0px;
@@ -292,7 +295,6 @@ a {
     color: red;
 }
 
-
 h4 {
     font-size: 2.5rem;
 }
@@ -301,10 +303,10 @@ h4 {
     width: 50%;
 }
 
+
 /* footer start */
 
-.footer-container
-{
+.footer-container {
     position: relative;
     height: fit-content;
     text-align: center;
@@ -342,34 +344,34 @@ footer {
     font-size: 1em;
 }
 
-.social{
-    display:inline-block;
+.social {
+    display: inline-block;
     margin-left: auto;
     margin-right: auto;
     size: 2em;
 }
-a
-{
-color: #ffffff;
+
+a {
+    color: #ffffff;
 }
 
-a:hover{
-  color:#FC2B2B;
-  text-decoration: none;
+a:hover {
+    color: #FC2B2B;
+    text-decoration: none;
 }
+
 
 /* footer end */
 
 body::-webkit-scrollbar {
     width: 1.2rem;
-  
-  }
-  
-  body::-webkit-scrollbar-track {
+}
+
+body::-webkit-scrollbar-track {
     background: #1e1e24;
-  }
-  
-  body::-webkit-scrollbar-thumb {
+}
+
+body::-webkit-scrollbar-thumb {
     background: #FC2B2B;
-      border-radius: 20px;
-  }
+    border-radius: 20px;
+}

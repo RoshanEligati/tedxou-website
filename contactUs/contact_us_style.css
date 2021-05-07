@@ -48,7 +48,7 @@ body {
 }
 
 .navbar .navbar-brand {
-    margin-top: -0.6rem;
+    margin-top: -0.45rem;
 }
 
 
@@ -197,7 +197,9 @@ body {
 
 hr {
     height: 1px;
-    width: 100%;
+    width: 96%;
+    margin-right: 2%;
+    margin-left: 2%;
     background-color: #fc2b2b;
     border-top: 1px #fc2b2b;
 }
