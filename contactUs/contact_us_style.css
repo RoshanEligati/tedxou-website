@@ -7,6 +7,7 @@
 body {
     padding-top: 7rem;
     background-color: #1a1a1a;
+    overflow-x: hidden;
 }
 
 
@@ -44,6 +45,10 @@ body {
 
 .navbar-nav li a:hover {
     color: #000000 !important;
+}
+
+.navbar .navbar-brand {
+    margin-top: -0.6rem;
 }
 
 
@@ -137,32 +142,38 @@ body {
 
 .accordion-item,
 .accordion-header {
-    background-color: transparent !important;
+    background-color: #ffffff !important;
     border: none;
     padding: 0 !important;
     margin-bottom: 0.1rem !important;
+    border-radius: 2.5rem;
 }
 
 .accordion-item {
     box-shadow: 0 0.3rem 0.3rem 2px #fc2b2b;
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
+    border-radius: 2.5rem;
 }
 
 .accordion-button {
     width: 100%;
     font-weight: 300;
+    font-size: 0.78em;
     color: #ffffff;
     text-decoration: none;
     text-align: left;
     background-color: #1a1a1a;
-    padding: 0.3rem;
+    padding: 1rem;
+    border-radius: 2.5rem;
 }
 
 .accordion-body {
+    font-size: 1.5em;
     text-align: left;
     background-color: #ffffff;
-    padding: 0.5rem;
+    padding: 1rem;
+    border-radius: 2.5rem;
 }
 
 .accordion-button:after {
@@ -326,8 +337,7 @@ h4 {
 
 /* footer start */
 
-.footer-container
-{
+.footer-container {
     position: relative;
     height: fit-content;
     text-align: center;
@@ -345,7 +355,9 @@ footer {
     color: #f5f5f5;
     position: relative;
     display: flex;
-    width: 100%;
+    width: 96%;
+    margin-left: 2%;
+    margin-right: 1%;
     padding: 10px 5px;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -358,39 +370,43 @@ footer {
     background: rgb(24, 24, 24);
     color: aliceblue;
     display: flex;
-    width: 100%;
+    width: 96%;
+    margin-left: 2%;
+    margin-right: 2%;
     padding: 10px 5px;
     justify-content: space-around;
     flex-wrap: wrap;
     font-size: 1em;
 }
 
-.social{
+.social {
     display: inline-block;
     margin-left: auto;
     margin-right: auto;
     size: 2em;
 }
-a
-{
-color: #ffffff;
+
+a {
+    color: #ffffff;
 }
 
-a:hover{
-  color:#FC2B2B;
-  text-decoration: none;
+a:hover {
+    color: #FC2B2B;
+    text-decoration: none;
 }
+
 
 /* footer end */
 
-::-webkit-scrollbar {
-    width: 3px;
+body::-webkit-scrollbar {
+    width: 1.2rem;
 }
 
-::-webkit-scrollbar-thumb {
-    background: red;
+body::-webkit-scrollbar-track {
+    background: #1e1e24;
 }
 
- ::-webkit-scrollbar-thumb:hover {
-    background: red;
+body::-webkit-scrollbar-thumb {
+    background: #FC2B2B;
+    border-radius: 20px;
 }
