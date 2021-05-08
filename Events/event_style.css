@@ -30,7 +30,6 @@ header {
 @media(max-width:720px) {
     header,
     .flex-container,
-    footer,
     .organizer,
     .box {
         flex-direction: column;
@@ -45,7 +44,6 @@ header {
     .top-container,
     .date,
     .next-container,
-    footer,
     .organiser,
     .event {
         flex-direction: column;
@@ -113,8 +111,7 @@ a {
     padding-bottom: 3px;
 }
 
-.three a,
-footer a {
+.three a {
     text-decoration: none;
     color: aliceblue;
 }
@@ -124,23 +121,11 @@ footer a {
     padding-top: 5px;
 }
 
-footer {
-    display: flex;
-    width: 100%;
-    padding: 10px 5px;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    font-size: 1em;
-}
 
-footer a {
-    padding-right: 20px;
-}
-
-footer a:hover {
+/* footer a:hover {
     text-decoration: underline;
     color: aliceblue;
-}
+} */
 
 ::-webkit-scrollbar {
     width: 3px;
@@ -218,6 +203,10 @@ footer a:hover {
 
 .nav li a {
     margin: 0px 10px;
+}
+
+.navbar .navbar-brand {
+    margin-top: -0.45rem;
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1024px) {
@@ -306,14 +295,83 @@ footer a:hover {
     color: red;
 }
 
-a:hover {
-    color: aquamarine;
-}
-
 h4 {
     font-size: 2.5rem;
 }
 
 .info {
     width: 50%;
+}
+
+
+/* footer start */
+
+.footer-container {
+    position: relative;
+    height: fit-content;
+    text-align: center;
+    padding-top: 0;
+    color: #fff;
+    background-color: #1a1a1a;
+    background-color: rgba(0, 0, 0, 0.9);
+    width: 100%;
+    padding: 45px;
+    font-size: medium;
+}
+
+footer {
+    background-color: #2d2d30;
+    color: #f5f5f5;
+    position: relative;
+    display: flex;
+    width: 100%;
+    padding: 10px 5px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    font-size: 1em;
+}
+
+.footer2 {
+    margin-top: 5px;
+    padding: 10px 50px;
+    background: rgb(24, 24, 24);
+    color: aliceblue;
+    display: flex;
+    width: 100%;
+    padding: 10px 5px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    font-size: 1em;
+}
+
+.social {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    size: 2em;
+}
+
+a {
+    color: #ffffff;
+}
+
+a:hover {
+    color: #FC2B2B;
+    text-decoration: none;
+}
+
+
+/* footer end */
+
+body::-webkit-scrollbar {
+    width: 1.2rem;
+}
+
+body::-webkit-scrollbar-track {
+    background: #1e1e24;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: #FC2B2B;
+    border-radius: 20px;
 }
