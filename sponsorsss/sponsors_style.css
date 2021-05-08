@@ -168,7 +168,7 @@ body {
     padding-right: 9em;
     margin: 20px auto 0;
     padding-bottom: 0.8em;
-    //transform: rotateY(180deg);
+    transform: rotateY(180deg);
 }
 
 .overlay {
