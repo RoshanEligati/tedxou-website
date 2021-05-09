@@ -3,26 +3,9 @@
 
 <script>
     function fun() {
-        var textWrapper = document.querySelector('.header');
-        textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
-        anime.timeline({
-                loop: true
-            })
-            .add({
-                targets: '.header .letter',
-                scale: [4, 1],
-                opacity: [0, 1],
-                translateZ: 0,
-                easing: "easeOutExpo",
-                duration: 950,
-                delay: (el, i) => 70 * i
-            }).add({
-                targets: '.header',
-                opacity: 0,
-                duration: 10000000000000000000000000000000000000,
-                easing: "easeOutExpo",
-                delay: 1000
-            });
+
+        img1();
+        img2();
     }
 
     function openModal() {
@@ -65,6 +48,24 @@
         dots[slideIndex - 1].className += " active";
         captionText.innerHTML = dots[slideIndex - 1].alt;
     }
+
+    function img1() {
+        let i;
+        let j = '';
+        for (i = 1; i < 41; i++) {
+            j += `<div class="image"><img src="Images/image${i}.jpeg" onclick="openModal();currentSlide(${i})" class="hover-shadow cursor"></div>`;
+        }
+        document.getElementById("image1").innerHTML = j;
+    }
+    function img2() {
+        let i;
+        let j = '';
+        for (i = 1; i < 41; i++) {
+            j += `<div class="mySlides"><img src="Images/image${i}.jpeg" style="width:100%"></div>`;
+
+        }
+        document.getElementById("modal-content1").innerHTML += j;
+    }
 </script>
 
 <head>
@@ -85,9 +86,10 @@
         <div class="container-fluid">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-          <span class="glyphicon glyphicon-chevron-down"></span>
-        </button>
-                <a class="navbar-brand" href="../homepage/home.html"><img src="../homepage/images/logo1.png" class="logo" style="height: 68px; width: 300px; margin-left: 15px;">
+                    <span class="glyphicon glyphicon-chevron-down"></span>
+                </button>
+                <a class="navbar-brand" href="../homepage/home.html"><img src="../homepage/images/logo1.png"
+                        class="logo" style="height: 68px; width: 300px; margin-left: 15px;">
                 </a>
             </div>
             <div class="collapse navbar-collapse" id="myNavbar">
@@ -101,62 +103,16 @@
                 </ul>
             </div>
     </nav>
-
     <div class="cont1">
         <div class="header">
             <p style="font:1.2rem">GALLERY</p>
         </div>
         <hr>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
-        <div class="cont">
-            <div class="image">
-                <img src="Images/image1.jpeg" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
-            </div>
-
-            <div class="image">
-                <img src="Images/image2.jpeg" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
-            </div>
-
-            <div class="image">
-                <img src="Images/image3.jpeg" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
-            </div>
-
-            <div class="image">
-                <img src="Images/image4.jpeg" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
-            </div>
-
-            <div class="image">
-                <img src="Images/image5.jpeg" onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
-            </div>
-            <div class="image">
-                <img src="Images/image6.jpeg" onclick="openModal();currentSlide(6)" class="hover-shadow cursor">
-            </div>
-            <div class="image">
-                <img src="Images/image7.jpeg" onclick="openModal();currentSlide(7)" class="hover-shadow cursor">
-            </div>
-            <div class="image">
-                <img src="Images/image8.jpeg" onclick="openModal();currentSlide(8)" class="hover-shadow cursor">
-            </div>
-            <div class="image">
-                <img src="Images/image9.jpeg" onclick="openModal();currentSlide(8)" class="hover-shadow cursor">
-            </div>
-            <div class="image">
-                <img src="Images/image10.jpeg" onclick="openModal();currentSlide(8)" class="hover-shadow cursor">
-            </div>
-            <div class="image">
-                <img src="Images/image11.jpeg" onclick="openModal();currentSlide(8)" class="hover-shadow cursor">
-            </div>
-            <div class="image">
-                <img src="Images/image12.jpeg" onclick="openModal();currentSlide(8)" class="hover-shadow cursor">
-            </div>
-
+        <div class="cont" id="image1">
         </div>
-
         <hr>
-
         <!--footer-->
-
-
         <footer data-aos="zoom-in" data-aos-duration="1000" class="flex fdb-block footer-large bg-dark">
             <div class="footer-container">
                 <div class="row align-items-top text-left ">
@@ -210,7 +166,6 @@
                 </div>
             </div>
 
-
             <div class="social">
                 <a href="https://www.instagram.com/tedxosmaniau/?hl=en" class="fa fa-instagram fa-3x"> </a>
                 <a href="https://www.instagram.com/tedxosmaniau/?hl=en" class="fa fa-facebook fa-3x"></a>
@@ -220,7 +175,6 @@
             <br>
 
         </footer>
-
         <footer class="footer2">
             <a href="">Ted Talks Usage Policy</a>
             <a href="">Privacy policy</a>
@@ -232,72 +186,11 @@
             <a href="">Membership</a>
             <p>&copy; TedConference,LLC.All Rights reserved </p>
         </footer>
-
-
     </div>
-
-
 
     <div id="myModal" class="modal">
         <span class="close cursor" onclick="closeModal()">&times;</span>
-        <div class="modal-content">
-
-            <div class="mySlides">
-
-                <img src="Images/image1.jpeg" style="width:100%">
-            </div>
-
-            <div class="mySlides">
-
-                <img src="Images/image2.jpeg" style="width:100%">
-            </div>
-
-            <div class="mySlides">
-
-                <img src="Images/image3.jpeg" style="width:100%">
-            </div>
-
-            <div class="mySlides">
-
-                <img src="Images/image4.jpeg" style="width:100%">
-            </div>
-
-            <div class="mySlides">
-
-                <img src="Images/image5.jpeg" style="width:100%">
-            </div>
-
-            <div class="mySlides">
-
-                <img src="Images/image6.jpeg" style="width:100%">
-            </div>
-
-            <div class="mySlides">
-
-                <img src="Images/image7.jpeg" style="width:100%">
-            </div>
-
-            <div class="mySlides">
-
-                <img src="Images/image8.jpeg" style="width:100%">
-            </div>
-            <div class="mySlides">
-
-                <img src="Images/image9.jpeg" style="width:100%">
-            </div>
-            <div class="mySlides">
-
-                <img src="Images/image10.jpeg" style="width:100%">
-            </div>
-            <div class="mySlides">
-
-                <img src="Images/image11.jpeg" style="width:100%">
-            </div>
-            <div class="mySlides">
-
-                <img src="Images/image12.jpeg" style="width:100%">
-            </div>
-
+        <div class="modal-content" id="modal-content1">
             <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
             <a class="next" onclick="plusSlides(1)">&#10095;</a>
 
@@ -306,8 +199,5 @@
             </div>
         </div>
     </div>
-
-
 </body>
-
 </html>

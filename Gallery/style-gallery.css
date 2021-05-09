@@ -10,7 +10,7 @@
   
   .header {
       background: black;
-      color: black;
+      color:red;
       text-align: center;
       font-weight: 300;
       font-size: 5em;
@@ -20,11 +20,7 @@
       opacity: 0;
   }
   
-  .header .letter {
-      font-family: Helvetica;
-      color: red;
-      display: inline-block;
-  }
+  
   
   .modal {
       display: none;
@@ -128,14 +124,24 @@
   
   .cont {
       position: relative;
+      
       column-count: 4;
       margin: 20px;
       background: black;
+      animation: article-load 3000ms ease-in-out 300ms;
+    animation-fill-mode: forwards;
+    transform: translateY(-20px);
+    opacity:0;
   }
   
   .cont1 {
       position: absolute;
       top: 100px;
+
+      animation: article-load 250ms ease-in;
+    animation-fill-mode: forwards;
+    transform: translateY(-20px);
+    opacity:0;
   }
   
   @keyframes article-load {
@@ -150,8 +156,9 @@
   }
   
   .image {
-      display: inline-block;
+    display: inline-block;
       margin: 20px;
+
   }
   
   .image img {
