@@ -450,6 +450,7 @@ body {
     }
 }
 
+
 /* .column1 {
     float: left;
     width: 20%;
@@ -457,6 +458,8 @@ body {
     padding-left: 30%;
     margin-right: -5%;
 } */
+
+
 /* 
 @media screen and (max-width: 650px) {
     .column1 {
@@ -464,6 +467,7 @@ body {
         display: block;
     }
 } */
+
 
 /* .column2 {
     float: left;
@@ -473,6 +477,7 @@ body {
     margin-left: 0;
 } */
 
+
 /* @media screen and (max-width: 650px) {
     .column2 {
         width: 100%;
@@ -480,112 +485,109 @@ body {
     }
 } */
 
-.newData{
+.newData {
     text-align: center;
     margin-bottom: 6px;
 }
-.new{
+
+.new {
     padding-bottom: 5%;
 }
 
-.sp.newData{
+.sp.newData {
     margin-bottom: 2%;
 }
 
-.image-1{
-    height:80%;
-    width:70%;
+.image-1 {
+    height: 80%;
+    width: 70%;
     margin-bottom: 7%;
 }
-.image-2{
-    height:80%;
-    width:70%;
+
+.image-2 {
+    height: 80%;
+    width: 70%;
     margin-bottom: 7%;
 }
+
 .card {
     width: 25rem;
     height: 35rem;
+    margin: 3rem;
     background: white;
     box-shadow: 0 0px 20px black;
 }
 
-.card.single{
-    width:30%;
+.card.single {
+    width: 30%;
     margin: 5% auto auto;
 }
 
-
-
-.card.left{
+.card.left {
     margin: 10px 20% 0 30%;
 }
-.card.right{
-margin: 10px 40% 0 10%;
-}
-@media screen and (max-width: 1200px){
 
+.card.right {
+    margin: 10px 40% 0 10%;
+}
+
+@media screen and (max-width: 1200px) {
     /* multiple photos */
-    .newData{
+    .newData {
         line-height: 0.7;
         margin-bottom: 4rem;
     }
-    .two.card.left{
+    .two.card.left {
         margin: 0 auto 10px;
     }
-    .two.card.right{
-    margin: 0 auto ;
+    .two.card.right {
+        margin: 0 auto;
     }
-    .two.card{
-        height:25rem;
-        width:20rem;
+    .two.card {
+        height: 25rem;
+        width: 20rem;
     }
-    .con{
-        line-height:0.5;
+    .con {
+        line-height: 0.5;
         font-size: 10px;
         margin-bottom: 5px;
     }
-    .two.image-1,.two.image-2{
+    .two.image-1,
+    .two.image-2 {
         margin-bottom: 0;
         height: 80%;
     }
-    .one.modal-content{
+    .one.modal-content {
         height: 60rem;
     }
-    .two.modal-content{
+    .two.modal-content {
         height: 75rem;
     }
-    
-
 }
 
-@media screen and (max-width: 770px){
-    
-/*one photo  */
-    
-.one.image-1{
-    height:90%;
-    width:70%;
-    margin-bottom: 10px;
+@media screen and (max-width: 770px) {
+    /*one photo  */
+    .one.image-1 {
+        height: 90%;
+        width: 70%;
+        margin-bottom: 10px;
+    }
+    .card.single {
+        width: 65%;
+        height: 70%;
+        margin: 5% auto auto;
+    }
+    .one.column {
+        height: 70%;
+        width: 70%;
+    }
+    .one.modal-content {
+        height: 55rem;
+    }
+    .two.modal-content {
+        height: 70rem;
+    }
 }
-.card.single{
-    width:65%;
-    height:70%;
-    margin: 5% auto auto;
-}
-
-.one.column{
-    height:70%;
-    width:70%;
-}
-.one.modal-content{
-    height: 55rem;
-}
-.two.modal-content{
-    height: 70rem;
-}
-
-} 
-
 
 .con {
     color: red;
@@ -605,7 +607,6 @@ margin: 10px 40% 0 10%;
     margin-top: -10px;
     color: black;
     margin-bottom: 5px;
-
 }
 
 h4 {

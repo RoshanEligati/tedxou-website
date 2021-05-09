@@ -209,7 +209,7 @@ a {
     margin-top: -0.45rem;
 }
 
-@media screen and (min-width:279px) and (max-width:376px) {
+@media screen and (min-width:279px) and (max-width:410px) {
     .navbar-header {
         display: flex;
         margin-left: -12rem;
