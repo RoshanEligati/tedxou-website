@@ -9,7 +9,7 @@
 
     <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
 
     <!-- Bootstrap CSS -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -44,9 +44,9 @@
             padding: 0;
         }
         
-        @media screen and (max-width: 425px) {
+        @media screen and (max-width: 350px) {
             .navbar-collapse {
-                margin-top: 25px;
+                margin-top: 10px;
             }
         }
         
@@ -55,16 +55,12 @@
             color: black;
             font-size: 16px;
             line-height: 3;
+            padding-top: -15em;
         }
         
         .navbar-nav li a:hover {
             color: #000000 !important;
         }
-        
-        .navbar .navbar-brand {
-            margin-top: -0.45rem;
-        }
-        /* The active link */
         
         .navbar-nav li.active a {
             color: #000000 !important;
@@ -78,7 +74,6 @@
         .dropdown-menu li a {
             color: #000 !important;
         }
-        /* On hover, the dropdown links will turn red */
         
         .dropdown-menu li a:hover {
             background-color: rgb(83, 81, 81) !important;
@@ -96,6 +91,24 @@
         
         .nav li a {
             margin: 0px 10px;
+        }
+        
+        .navbar .navbar-brand {
+            margin-top: -0.45rem;
+        }
+        
+        @media screen and (min-width:279px) and (max-width:410px) {
+            .navbar-header {
+                display: flex;
+                margin-left: -12rem;
+            }
+            .navbar-header .logo {
+                margin-left: -3rem;
+            }
+            .navbar-header button {
+                padding-left: 0px;
+                margin-left: 0px;
+            }
         }
         
         @media screen and (min-width: 1024px) and (max-width: 1024px) {
@@ -273,6 +286,7 @@
             </div>
             <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav navbar-right">
+                    <li><a href="./homepage/home.html">HOME</a></li>
                     <!-- <li><a href="../Events/events.html">EVENTS</a></li>
                     <li><a href="../Speakers.html">SPEAKERS</a></li> -->
                     <li><a href="./teampage/TeamPage.html">TEAM</a></li>

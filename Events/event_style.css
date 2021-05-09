@@ -156,9 +156,9 @@ a {
     padding: 0;
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 350px) {
     .navbar-collapse {
-        margin-top: 25px;
+        margin-top: 10px;
     }
 }
 
@@ -207,6 +207,20 @@ a {
 
 .navbar .navbar-brand {
     margin-top: -0.45rem;
+}
+
+@media screen and (min-width:279px) and (max-width:376px) {
+    .navbar-header {
+        display: flex;
+        margin-left: -12rem;
+    }
+    .navbar-header .logo {
+        margin-left: -3rem;
+    }
+    .navbar-header button {
+        padding-left: 0px;
+        margin-left: 0px;
+    }
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1024px) {
