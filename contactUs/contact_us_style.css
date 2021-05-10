@@ -101,6 +101,20 @@ body {
     max-height: 400px;
 }
 
+@media screen and (min-width:279px) and (max-width:410px) {
+    .navbar-header {
+        display: flex;
+        margin-left: -12rem;
+    }
+    .navbar-header .logo {
+        margin-left: -3rem;
+    }
+    .navbar-header button {
+        padding-left: 0px;
+        margin-left: 0px;
+    }
+}
+
 
 /**/
 
