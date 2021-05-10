@@ -529,7 +529,22 @@ body {
 .card.right {
     margin: 10px 40% 0 10%;
 }
-
+.row .title1{
+    color:red;
+    font-weight: bold;
+    font-size: 20 px;
+}
+.nam{
+    padding-top: 3em;
+}
+ul.list{
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+}
+ul.list.li{
+    margin-left: 1em;
+    border: solid 1px;
+}
 @media screen and (max-width: 1200px) {
     /* multiple photos */
     .newData {
