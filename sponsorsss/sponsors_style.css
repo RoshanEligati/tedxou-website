@@ -114,12 +114,13 @@ body {
     margin-bottom: -2em;
 }
 
-.sponsors h3 {
+
+/* .sponsors h3 {
     color: #fc2b2b;
     font-size: 2.5em;
     font-weight: 900;
     text-align: center;
-}
+} */
 
 .my_box {
     display: flex;
@@ -191,7 +192,7 @@ body {
     padding-bottom: 1.5em;
     text-align: center;
     font-weight: 900;
-    font-size: 4.5em;
+    font-size: 4em;
 }
 
 .our_sponsors .letter {
