@@ -255,18 +255,20 @@ p {
     box-shadow: 0 0.2rem 10px #ffffff;
 }
 
-.btn {
-    display: block;
-    text-decoration: none;
-    width: 20%;
-    margin-left: 40%;
-    margin-right: 40%;
-    background-color: #fc2b2b;
-    color: #1a1a1a;
-    transition: .5s;
-    font-size: 2.5rem;
-    font-family: sans-serif;
+.submit {
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+    background-color: #ffffff;
+    color: #fc2b2b;
+    font-size: 1.5rem;
     border-radius: 2rem;
+    font-weight: bold;
+}
+
+.submit:hover {
+    background-color: #fc2b2b;
+    color: #ffffff;
 }
 
 .form__fields .form-field {
