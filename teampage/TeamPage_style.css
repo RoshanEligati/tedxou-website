@@ -541,15 +541,9 @@ body {
     padding-top: 3em;
 }
 
-
-/* ul.list{
-    display: grid;
-    grid-template-columns: repeat(3,auto);
+.list {
+    font-weight: bold;
 }
-ul.list.li{
-    margin-left: 1em;
-    border: solid 1px;
-} */
 
 @media screen and (max-width: 1200px) {
     /* multiple photos */
