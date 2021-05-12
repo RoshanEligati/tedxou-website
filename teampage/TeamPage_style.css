@@ -519,8 +519,8 @@ body {
 }
 
 .card.single {
-    width: 30%;
-    margin: 5% auto auto;
+    width: 25%;
+    margin: 0 auto auto;
 }
 
 .card.left {
