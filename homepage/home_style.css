@@ -34,6 +34,18 @@ footer {
     padding: 5px;
 }
 
+#myCarousel1 .container{
+    margin-bottom: 2rem;
+}
+
+@media screen and (max-width: 425px) {
+    #myCarousel1 .container img{
+        height: auto;
+        width: 100px;
+        max-height: 100px;
+    }
+}
+
 
 /* navbar css */
 
